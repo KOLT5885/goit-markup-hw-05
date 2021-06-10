@@ -50,7 +50,16 @@
         <section class="hero"> 
             <div class="container">
                 <h1  class="title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="order-service">Заказать услугу</button>
+                <button data-modal-open type="button"class="order-service">Заказать услугу</button>
+                <div data-modal class="backdrop is-hidden" >
+                    <div class="modal">
+                        <button data-modal-close type="button" class="modal-button">
+                            <svg class="modal-icon" width=18px height=18px>
+                                <use href="./images/symbol-defs.svg#icon-close-black"></use>    
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Особенности -->
@@ -60,7 +69,7 @@
                 <ul class="features-list list"> 
                     <li class="item">
                         <div class="features-svg">
-                            <svg class="svg">
+                            <svg class="svg"> 
                                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
                             </svg>
                         </div>        
@@ -102,9 +111,24 @@
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="activities-list list">
-                    <li class="item"><img src="./images/box1.jpg" alt="Кодинг" width="294" class="img"></li>
-                    <li class="item"><img src="./images/box2.jpg" alt="Адаптивная вертска" width="294" class="img"></li>
-                    <li class="item"><img src="./images/box3.jpg" alt="Дизайн" width="294" class="img"></li>
+                    <li class="item">
+                        <img src="./images/box1.jpg" alt="Кодинг" width="294" class="img">
+                        <div class="activities-title">
+                            <p class="text">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="./images/box2.jpg" alt="Адаптивная вертска" width="294" class="img">
+                        <div class="activities-title">
+                            <p class="text">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="./images/box3.jpg" alt="Дизайн" width="294" class="img">
+                        <div class="activities-title">
+                            <p class="text">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -373,6 +397,9 @@
             </div>    
         </div>
     </footer>
+
+    <!--скрипт для модального окна-->
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>
