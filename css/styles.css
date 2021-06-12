@@ -516,8 +516,9 @@ p {
 }
 
 .team-list .team-description {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
 }
 
 .team-list .title {
@@ -642,6 +643,7 @@ p {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .column-1 {
